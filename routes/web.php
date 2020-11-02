@@ -8,4 +8,4 @@ Route::get('/', function () {
 Route::get('employeeImageUpload', [EmployeeImageUploadController::class,'employeeImageUpload']);
  
 
-Route::get('employeeImageUpload', [EmployeeImageUploadController::class,'employeeImageUploadPost'])->name('employeeImageUpload');
+Route::post('employeeImageUpload', [EmployeeImageUploadController::class,'employeeImageUploadPost'])->name('employeeImageUpload');
